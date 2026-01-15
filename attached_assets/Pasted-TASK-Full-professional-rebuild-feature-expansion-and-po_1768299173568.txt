@@ -1,0 +1,352 @@
+TASK: Full professional rebuild, feature expansion, and polish of the Bottomline product
+
+PROJECT:
+[PASTE YOUR EXISTING REPLIT PROJECT LINK / NAME HERE]
+
+PRODUCT NAME (FINAL, NON-NEGOTIABLE):
+Bottomline
+
+CORE OBJECTIVE:
+Transform this project into a serious, institutional-grade financial modeling platform.
+Nothing should feel fake, incomplete, placeholder, demo-only, or “startup hacky.”
+This must feel usable by:
+- Investment banking analysts
+- Private equity / credit investors
+- Corporate finance professionals
+- Sophisticated founders and operators
+
+If a feature exists, it must WORK.
+If it doesn’t work today, rebuild it fully or remove it.
+
+────────────────────────────────────────
+GLOBAL EXECUTION PRINCIPLES (READ FIRST)
+────────────────────────────────────────
+
+1. This is NOT a cosmetic pass.
+   This is a full functional, UX, data, and output rebuild.
+
+2. No placeholders.
+   - No fake data
+   - No hardcoded numbers
+   - No “coming soon”
+   - No non-functional buttons or pages
+
+3. Professional bar:
+   Ask constantly:
+   “Would this survive first contact with an IB analyst or PE associate?”
+
+4. Excel outputs are first-class citizens.
+   They must be IC-ready with no manual cleanup required.
+
+5. Take as long as needed.
+   Completeness > speed.
+
+────────────────────────────────────────
+A. IN-APP MODEL EDITING & CUSTOMIZATION
+────────────────────────────────────────
+
+Implement full in-app editing for financial models.
+
+Requirements:
+- Users must be able to:
+  - Edit assumptions directly in the app
+  - Toggle optional metrics on/off
+  - Adjust growth rates, margins, multiples, leverage, exit assumptions, etc.
+- Changes must update calculations dynamically.
+- Clear separation between:
+  - Inputs
+  - Calculations
+  - Outputs
+
+Customization:
+- Allow users to:
+  - Change model colour scheme (light/dark, neutral palettes)
+  - Toggle table density (compact vs expanded)
+  - Rename sections and assumptions
+- Persist user preferences per account.
+
+Acceptance:
+- Editing feels immediate and intuitive
+- No page reloads required
+- Changes reflected in UI AND Excel exports
+
+────────────────────────────────────────
+B. LANDING PAGE: FIX “SEE HOW IT WORKS”
+────────────────────────────────────────
+
+Current issue:
+- “See how it works” is non-functional / null.
+
+Fix:
+- Replace with a real experience:
+  - Interactive walkthrough
+  - Short guided demo
+  - Or embedded product flow preview
+
+Requirements:
+- Must actually show how Bottomline works
+- Must not be a dead link
+- Must align with real product capabilities
+
+Acceptance:
+- Click → meaningful experience
+- No broken or placeholder UX
+
+────────────────────────────────────────
+C. LOGIN & SIGNUP: COMPLETE OVERHAUL
+────────────────────────────────────────
+
+Problems:
+- Looks dated
+- Still references “Model Weaver”
+- Feels unprofessional
+
+Fix completely.
+
+Requirements:
+- Fully rebranded to Bottomline
+- Modern, clean, institutional design
+- Professional copy (no hype)
+- Smooth validation and error handling
+- Clear onboarding progression
+
+Include:
+- Updated login
+- Updated signup
+- Optional onboarding step to tailor experience
+- Remove all legacy branding references
+
+Acceptance:
+- No trace of old brand
+- Would feel acceptable for a financial institution
+
+────────────────────────────────────────
+D. LOGO: REDESIGN & PROPER IMPLEMENTATION
+────────────────────────────────────────
+
+Current logo is lazy. Redesign entirely.
+
+Requirements:
+- Typography-led
+- Minimal
+- Monochrome-first
+- No fintech clichés
+- Classy, restrained, confident
+
+Implement properly:
+- Header
+- Auth pages
+- Dashboard
+- Terminal
+- Excel exports
+- Favicon
+- Metadata
+
+Acceptance:
+- Logo feels intentional
+- Never decorative
+- Never oversized
+- Works in black & white
+
+────────────────────────────────────────
+E. COMPS, PRECEDENTS & LBO: REAL DATA, REAL USE
+────────────────────────────────────────
+
+Current state:
+- Fake
+- Non-usable
+- Demo-only
+
+Rebuild completely.
+
+Requirements:
+1. Comparable Companies:
+   - Real inputs
+   - Meaningful metrics
+   - User-editable assumptions
+   - Clear output tables
+
+2. Precedent Transactions:
+   - Proper structure
+   - Sensible valuation logic
+   - Editable deal assumptions
+
+3. LBO:
+   - Functional sources & uses
+   - Operating assumptions
+   - Debt tranches
+   - Entry / exit logic
+   - IRR & MOIC calculations
+
+Outputs:
+- Fully formatted Excel downloads
+- IC-ready formatting
+- Clear assumptions tab
+- Clear output tab
+
+Acceptance:
+- Models are actually usable
+- Results make financial sense
+- Excel can be sent externally without embarrassment
+
+────────────────────────────────────────
+F. SENSITIVITY ANALYSIS: FULL BUILD
+────────────────────────────────────────
+
+Current state:
+- Does nothing
+
+Build properly.
+
+Requirements:
+- User selects variables
+- Define ranges
+- Automatically generate sensitivity tables
+- Display in UI
+- Export to Excel
+
+Acceptance:
+- Sensitivity tables are readable
+- Results update dynamically
+- Excel export included
+
+────────────────────────────────────────
+G. PORTFOLIO: FULL BUILD
+────────────────────────────────────────
+
+Current state:
+- Does nothing
+
+Build fully.
+
+Requirements:
+- Users can:
+  - Save multiple models
+  - Group them into portfolios
+  - View aggregated metrics
+  - Compare outputs across models
+
+Acceptance:
+- Portfolio has real analytical value
+- Not just a list of links
+
+────────────────────────────────────────
+H. SETTINGS: FULL BUILD
+────────────────────────────────────────
+
+Current state:
+- Does nothing
+
+Build fully.
+
+Include:
+- Profile settings
+- Display preferences
+- Model defaults
+- Export preferences
+- Security settings (where applicable)
+
+Acceptance:
+- Every toggle or option has a real effect
+- Settings persist across sessions
+
+────────────────────────────────────────
+I. TOOLKIT EXPANSION (CRITICAL)
+────────────────────────────────────────
+
+The app is currently extremely limited.
+Expand aggressively but responsibly.
+
+Add usable features such as:
+- Scenario analysis
+- Version history
+- Model duplication
+- Assumption comparison
+- Notes & annotations
+- Audit trail of changes
+- Summary output pages
+
+Every feature must:
+- Do something real
+- Improve decision-making
+- Not feel like filler
+
+────────────────────────────────────────
+J. EXCEL OUTPUT: BOTTOMLINE-GRADE
+────────────────────────────────────────
+
+Requirements:
+- Professional formatting
+- Clear structure
+- Bottomline branding included subtly
+- Timestamp
+- Model version
+- No default Excel styling
+
+Excel must include:
+- Inputs
+- Calculations
+- Outputs
+- Sensitivities (if applicable)
+
+Acceptance:
+- Excel is IC-ready
+- No manual cleanup required
+
+────────────────────────────────────────
+K. MODEL CREATION: MORE DEPTH
+────────────────────────────────────────
+
+When creating a model, include:
+- Expanded optional metrics
+- Advanced assumptions
+- Ability to toggle complexity level
+- Clear explanation of each input
+
+Acceptance:
+- Model depth scales with user sophistication
+- Beginner and advanced users both supported
+
+────────────────────────────────────────
+L. COPY & LANGUAGE (GLOBAL)
+────────────────────────────────────────
+
+Rewrite all copy to be:
+- Classy
+- Confident
+- Professional
+- Precise
+
+Banned:
+- AI hype
+- Buzzwords
+- Marketing fluff
+
+Preferred:
+- Clear outcomes
+- Plain English
+- Financial credibility
+
+────────────────────────────────────────
+DELIVERABLES & QUALITY BAR
+────────────────────────────────────────
+
+Deliver:
+- Fully working product
+- No dead UI
+- No fake data
+- No legacy branding
+- Real financial usability
+
+Before marking complete, verify:
+- Every button works
+- Every feature does something real
+- Excel outputs are impressive
+- Product feels “serious”
+
+Final question before completion:
+“Would a finance professional trust this tool?”
+
+If not, continue refining.
+
+END

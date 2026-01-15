@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 32" fill="none">
+  <rect x="0" y="0" width="28" height="28" rx="4" fill="currentColor"/>
+  <text x="6" y="21" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="white">B</text>
+  <text x="36" y="22" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" font-weight="600" fill="currentColor" letter-spacing="-0.5">Bottomline</text>
+</svg>

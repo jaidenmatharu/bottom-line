@@ -1,0 +1,164 @@
+TASK: Create a premium logo for Bottomline, rewrite all product copy, and implement both consistently across the entire product
+
+PROJECT: [PASTE YOUR REPLIT PROJECT LINK / NAME HERE]
+
+BRAND NAME:
+Bottomline
+
+BRAND POSITIONING:
+Bottomline builds institutional-grade financial models automatically.
+It should feel:
+- Calm, confident, and authoritative
+- Premium, not flashy
+- Designed for professionals who care about clarity and outcomes
+- Sexy in the finance sense: restraint, precision, confidence
+
+Nothing should feel like consumer SaaS, fintech hype, or AI theater.
+
+────────────────────────────────────────
+A. LOGO DESIGN (PRIMARY VISUAL IDENTITY)
+────────────────────────────────────────
+
+Design a complete logo system for Bottomline.
+
+1. Primary logo
+- Typography-led wordmark (preferred)
+- Optional subtle mark or abstraction
+- No fintech clichés (charts, arrows, lightning bolts)
+- Must work on both light and dark backgrounds
+- Timeless and credible in a boardroom or IC deck
+
+2. Secondary / compact logo
+- Minimal monogram or icon treatment
+- Suitable for favicon, mobile nav, Excel footers
+- Must still feel serious and premium
+
+3. Color usage
+- Default: monochrome (black / white / charcoal)
+- Accent color allowed but extremely restrained
+- Logo must remain strong in pure black or white
+
+Deliverables:
+- SVG (primary)
+- SVG (icon)
+- PNG (light & dark)
+- Favicon-compatible asset
+
+Design test:
+“If this appeared on a Lazard, Evercore, or Blackstone slide, would it feel appropriate?”
+
+────────────────────────────────────────
+B. COPY REWRITE (MANDATORY & COMPREHENSIVE)
+────────────────────────────────────────
+
+Rewrite ALL product copy to align with Bottomline’s tone.
+This includes:
+- Landing page
+- Navigation labels
+- Headlines & subheadlines
+- Feature descriptions
+- Auth pages (login, signup, onboarding)
+- Dashboard & terminal labels
+- Tooltips, helper text, empty states
+- Generated outputs (Excel headers, summaries, footers)
+- README and product description
+
+Tone guidelines:
+- Confident, not loud
+- Precise, not verbose
+- Plain English, no buzzwords
+- Outcome-driven, not “AI-powered” hype
+
+BANNED PHRASES (examples):
+- “AI-powered”
+- “Next-generation”
+- “Revolutionary”
+- “Unlock insights”
+- “Magic / smart / supercharged”
+
+PREFERRED LANGUAGE:
+- “Automatically built financial models”
+- “Clear, auditable assumptions”
+- “Institutional-grade outputs”
+- “Designed for real decisions”
+
+Example direction:
+BAD:
+“AI-powered platform that unlocks powerful financial insights.”
+
+GOOD:
+“Bottomline builds clean, auditable financial models you can trust.”
+
+Landing page copy must:
+- Immediately explain what Bottomline does
+- Communicate credibility
+- Avoid marketing fluff
+- Feel written for serious users
+
+────────────────────────────────────────
+C. LOGO + COPY IMPLEMENTATION
+────────────────────────────────────────
+
+Apply the logo and rewritten copy consistently across:
+
+1. Website & App
+- Header (top-left)
+- Login & signup pages
+- Dashboard
+- Terminal
+- Mobile navigation
+- Footer (subtle)
+
+2. Metadata & system surfaces
+- Favicon
+- Browser title
+- OpenGraph images
+- Emails and notifications (if present)
+
+3. Generated Outputs
+- Excel models:
+  - Clean “Bottomline” branding in header or footer
+  - Compact logo mark where space is limited
+  - Professional, understated placement
+- PDFs / reports (if applicable)
+
+4. Documentation
+- README header updated to Bottomline
+- Product description rewritten in new tone
+- Add short “Brand Voice & Copy” section
+
+Acceptance:
+- Logo and copy feel intentional, not decorative
+- No inconsistent tone across surfaces
+- Branding never interferes with usability
+
+────────────────────────────────────────
+D. BRAND & COPY GOVERNANCE
+────────────────────────────────────────
+
+Create a short BRAND.md (or LOGO_USAGE.md) that defines:
+- Logo usage rules (primary vs icon)
+- Clear space and sizing
+- Approved color usage
+- Copy tone rules (what to say, what to avoid)
+- Examples of good vs bad copy
+
+Keep this concise and practical.
+
+────────────────────────────────────────
+E. QUALITY BAR (NON-NEGOTIABLE)
+────────────────────────────────────────
+
+✔ Logo feels credible in institutional finance  
+✔ Copy reads like it was written for professionals  
+✔ No hype, no fluff, no startup clichés  
+✔ Branding consistent across web, app, and outputs  
+✔ Excel models and UI feel IC-ready without cleanup  
+
+If anything feels trendy, playful, or over-designed:
+Redesign it.
+
+Default decision rule:
+“Would a senior banker trust this at first glance?”
+
+END

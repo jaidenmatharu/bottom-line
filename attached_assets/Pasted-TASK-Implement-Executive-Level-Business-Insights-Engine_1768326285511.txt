@@ -1,0 +1,190 @@
+TASK: Implement Executive-Level Business Insights Engine for Bottomline
+
+PROJECT:
+[PASTE YOUR REPLIT PROJECT LINK / NAME HERE]
+
+FEATURE NAME:
+Executive Insights
+
+CORE OBJECTIVE:
+Add a new capability to Bottomline that produces **high-level, executive-ready insights**
+derived from the underlying financial models, assumptions, scenarios, sensitivities,
+and portfolio data.
+
+This is NOT analytics noise.
+This is NOT verbose AI commentary.
+This is NOT a data dump.
+
+This feature must answer:
+“What does this mean for the business, and what should leadership pay attention to?”
+
+If an insight would not be useful to a CEO, IC member, or board, it does not belong.
+
+────────────────────────────────────────
+A. EXECUTIVE INSIGHTS – CONCEPT & PLACEMENT
+────────────────────────────────────────
+
+Create a dedicated **Executive Insights** surface within the app.
+
+Placement:
+- Top-level navigation item OR
+- A prominent tab within Dashboard / Analysis
+
+Purpose:
+- Translate model outputs into strategic, business-level implications
+- Highlight risks, drivers, and decision-relevant conclusions
+- Abstract away technical modeling detail unless explicitly expanded
+
+Tone:
+- Clear
+- Calm
+- Confident
+- Non-technical
+- No hype, no jargon
+
+────────────────────────────────────────
+B. TYPES OF INSIGHTS TO GENERATE
+────────────────────────────────────────
+
+Insights must be generated from REAL underlying data and models.
+
+1. Performance Summary
+- High-level snapshot of:
+  - Revenue trajectory
+  - Margin profile
+  - Cash generation
+  - Leverage and liquidity
+- Expressed in plain business language
+
+Example (directional tone, not literal text):
+“Revenue growth is primarily driven by pricing rather than volume, increasing margin sensitivity to demand softening.”
+
+2. Key Value Drivers
+- Identify and rank:
+  - The 3–5 variables that most impact valuation or returns
+- Derived from sensitivities and scenario analysis
+
+Example:
+“Exit multiple and EBITDA margin expansion account for over 60% of equity value variance.”
+
+3. Risk Signals
+- Highlight:
+  - Downside scenarios
+  - Covenant pressure
+  - Cash shortfalls
+  - Concentration risk
+- Flag issues early and clearly
+
+Example:
+“Under conservative growth assumptions, free cash flow turns negative in Year 3.”
+
+4. Scenario Comparison
+- Summarize differences between:
+  - Base
+  - Upside
+  - Downside
+- Focus on implications, not mechanics
+
+Example:
+“The downside case compresses IRR by 8 points while still preserving capital, suggesting asymmetric risk is limited.”
+
+5. Portfolio-Level Insights (if applicable)
+- Cross-model observations:
+  - Exposure concentration
+  - Correlated risks
+  - Return dispersion
+
+Example:
+“Portfolio returns are disproportionately driven by two assets with similar demand drivers.”
+
+────────────────────────────────────────
+C. INSIGHT STRUCTURE & FORMAT
+────────────────────────────────────────
+
+Each insight must follow a disciplined structure:
+
+- Headline (1 sentence, bold, plain English)
+- Supporting context (2–3 concise sentences)
+- Optional expandable detail (for analysts)
+- Confidence indicator (high / medium / low based on data stability)
+
+Avoid:
+- Long paragraphs
+- Buzzwords
+- Technical jargon unless expandable
+
+Acceptance:
+- Insights readable in under 30 seconds
+- No scrolling walls of text
+
+────────────────────────────────────────
+D. INTERACTIVITY & CONTROL
+────────────────────────────────────────
+
+Users must be able to:
+- Refresh insights when assumptions change
+- Toggle insight depth (Executive vs Detailed)
+- Filter by:
+  - Risk
+  - Value drivers
+  - Liquidity
+  - Growth
+- Export insights:
+  - As a one-page executive summary
+  - As part of Excel or PDF outputs
+
+────────────────────────────────────────
+E. EXCEL & EXPORT INTEGRATION
+────────────────────────────────────────
+
+Include Executive Insights in exports.
+
+Excel:
+- Dedicated “Executive Summary” tab
+- Clean, professional formatting
+- Bottomline branding
+- Clear headings and spacing
+
+PDF (if applicable):
+- IC-ready layout
+- Plain English
+- No charts unless they directly support the insight
+
+Acceptance:
+- Output can be sent directly to:
+  - CEO
+  - IC
+  - Board
+Without explanation or cleanup.
+
+────────────────────────────────────────
+F. DATA INTEGRITY & GOVERNANCE
+────────────────────────────────────────
+
+Rules:
+- Insights must be traceable to underlying data
+- No hallucinated numbers
+- No generic statements
+- If confidence is low, state it explicitly
+
+Implement:
+- Insight provenance (which model, scenario, assumptions)
+- Timestamp
+- Model version reference
+
+────────────────────────────────────────
+G. QUALITY BAR (NON-NEGOTIABLE)
+────────────────────────────────────────
+
+✔ Insights feel senior, not analytical  
+✔ Language is business-first, not model-first  
+✔ No filler or generic commentary  
+✔ Directly supports decision-making  
+✔ Feels credible in a boardroom  
+
+Final validation question before marking complete:
+“Would a CEO actually read this?”
+
+If not, refine further.
+
+END

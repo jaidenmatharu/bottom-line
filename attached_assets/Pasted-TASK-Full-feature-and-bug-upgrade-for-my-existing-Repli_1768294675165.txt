@@ -1,0 +1,167 @@
+TASK: Full feature and bug upgrade for my existing Replit project
+PROJECT: [PASTE your Replit project link or name here: PROJECT_LINK]
+CONTEXT:
+You are working on an existing web app (fullstack). I don't want major architectural rewrites unless absolutely necessary — prefer incremental, well-tested improvements. Detect the tech stack automatically (e.g., Next.js/React + Node/Express, or React + Firebase, or Django, etc.) and adapt the implementation to the stack. If you must make a stack change, propose it in the PR description and justify why.
+
+GOALS (high level):
+1. Landing page upgrade (design, SEO, responsiveness, conversion).
+2. Login / Sign-up upgrade (security, UX, OAuth, forgot password, email verification).
+3. Fix terminal stats bug — ensure stats update when models are added/deleted.
+4. Curate main terminal UI by user onboarding profile (personalized experience).
+5. Core system build-out: Dashboard, Repository, Analysis, Intel, System Config, Security Protocols, User Page.
+6. Add more valuation methods/inputs & increase usability and features.
+7. Tests, docs, deployment readiness, and clear PR with screenshots and run instructions.
+
+DETAILED TASKS & ACCEPTANCE CRITERIA:
+
+A. Project discovery & initial setup
+- Detect and report stack (frameworks, DB, auth provider). If any dependency is missing, add to README and include install steps.
+- Create a working branch named: BRANCH_NAME (e.g., feature/upgrade-jan2026).
+- Provide a short tech summary at top of PR describing detected stack and key implementation choices.
+
+B. Landing page upgrade
+- Tasks:
+  - Modernize layout and copy to clearly explain product value, pricing or CTA, and onboarding path.
+  - Ensure responsive design across common breakpoints (mobile, tablet, desktop).
+  - Add social proof / customer logos / feature highlights / clear CTA(s).
+  - Improve SEO (appropriate title, meta description, OG tags), include structured data where relevant.
+  - Ensure accessibility basics: semantic HTML, keyboard nav, color contrast.
+- Acceptance:
+  - Visual screenshots for desktop and mobile included in PR.
+  - Lighthouse score: show improvements (report attached); not required to hit a specific number but must be demonstrably improved vs prior.
+  - CTAs lead to the actual signup flow and are instrumented for click tracking.
+
+C. Login & Sign-up upgrade
+- Tasks:
+  - Replace/upgrade auth flows to include:
+    - Email + password with secure hashing.
+    - Email verification on signup.
+    - Forgot password / reset link flow.
+    - Optional: OAuth sign-in options (Google and GitHub) if current stack supports it.
+    - Form validation (client & server) with helpful error messages.
+  - Improve UX: progressive onboarding hints, success toasts, disable buttons during requests.
+  - Secure session handling (HttpOnly cookies or secure tokens), CSRF protection for forms, rate limits on auth endpoints.
+- Acceptance:
+  - End-to-end sign-up, verification, login, logout, and reset flows work in local and staging.
+  - Automated tests added for key auth endpoints (unit/integration).
+  - Documentation in README for env vars required (SMTP / OAuth credentials).
+
+D. Terminal bug + real-time stats
+- Problem: "Main terminal does not update the stats; it's static when deleting or adding a model."
+- Tasks:
+  - Investigate and fix root cause — whether frontend state not refreshing, missing socket/message, or backend not emitting events.
+  - Implement real-time updates (WebSockets / SSE / polling fallback) for terminal stats when models are added/deleted/modified.
+  - Ensure optimistic UI where appropriate and graceful error handling.
+- Acceptance:
+  - Adding or deleting a model updates terminal stats in <2s in local test via real-time event or reliable polling.
+  - Add unit/integration tests that simulate add/delete model and assert updated API/state behavior.
+  - Provide debugging notes in PR explaining root cause and fix.
+
+E. Curated main terminal by onboarding profile
+- Tasks:
+  - Use existing onboarding metadata (or create a minimal profile schema) to present a curated terminal:
+    - Show relevant metrics, recommended models, and short contextual help based on onboarding choices.
+    - If user has no profile, show a guided default with a "complete onboarding" CTA.
+  - Implement small personalization API or use existing user object.
+- Acceptance:
+  - For at least two sample user profiles (e.g., "Beginner" and "Advanced"), include screenshots showing different terminal states.
+  - Provide unit tests or storybook stories (if applicable) illustrating personalization.
+
+F. Core system build-out (each item should be an independent module/route/SPA page)
+- Dashboard:
+  - Overview, key metrics, recent activity, quick actions.
+  - Configurable widgets (at minimum: models count, recent runs, queued jobs).
+- Repository:
+  - CRUD for models/assets; robust search and filtering; version history or at least last-modified info.
+- Analysis:
+  - Interface to run an analysis job on a model, view results, and persist results.
+- Intel:
+  - A read-only feed or card view for insights, alerts, or system messages.
+- System Config:
+  - Admin-only settings page to manage site-level configs and feature flags.
+- Security Protocol:
+  - Audit logs for sensitive actions (login attempts, model deletes), role-based access control enforcement (Admin vs User).
+- User Page:
+  - Profile management, API keys (create/revoke), billing placeholder if present.
+- Acceptance:
+  - Each module has routes, UI, and basic backend endpoints implemented.
+  - RBAC implemented and enforced.
+  - Basic unit tests and at least one e2e test for one or two modules.
+
+G. More valuation methods & inputs
+- Tasks:
+  - Add at least 3 additional valuation methodologies or additional input fields to existing valuation tools (e.g., DCF with variable growth rates, comparable multiples, liquidation value, sensitivity scenarios).
+  - Make inputs dynamic and allow saving presets.
+  - Improve UI for entering assumptions and show summarized sensitivity tables or charts.
+- Acceptance:
+  - New methods appear in Analysis UI and can be run locally.
+  - Results are saved and retrievable.
+  - Provide example test dataset and run showing outputs.
+
+H. Usability & product improvements
+- Tasks:
+  - Improve form UX, inline help tooltips, and microcopy.
+  - Add client-side input validation and server-side verification.
+  - Ensure consistent styling (follow existing design system or add a lightweight global CSS/Tailwind config).
+- Acceptance:
+  - Documented style decisions and updated global stylesheet or token file.
+  - Run through a checklist of common flows and ensure no regressions.
+
+I. Tests, CI, and deployment readiness
+- Tasks:
+  - Add/extend unit tests for backend and frontend.
+  - Add a simple integration test for critical flows (auth, add/delete model, run analysis).
+  - Update or add CI config (e.g., GitHub Actions) that runs tests on PRs (if relevant to repo).
+  - Provide clear run instructions for local dev and staging deploy steps.
+- Acceptance:
+  - Tests pass locally and on CI.
+  - README updated with environment variables, local setup, and how to run tests.
+
+J. Security, privacy, and performance
+- Tasks:
+  - Ensure no secrets are committed.
+  - Verify password storage and session handling are secure.
+  - Scan for vulnerable dependencies (report included).
+- Acceptance:
+  - Short security checklist added to PR.
+  - No secrets in commits and no high-severity dependency alerts unresolved.
+
+DELIVERABLES (what I want in the PR)
+1. Branch: BRANCH_NAME.
+2. One or multiple pull requests with descriptive titles and small commits per logical change.
+3. PR description must include:
+   - Stack summary and files touched.
+   - Root cause analysis for the terminal stats bug and exact code changes.
+   - Screenshots (desktop + mobile) for UI changes.
+   - How to test locally (commands, env vars), and example test cases.
+4. Changelog or migration script for DB changes (if any).
+5. Unit and integration test outputs or CI link.
+6. Updated README with setup instructions and a short developer guide for the new modules.
+7. Export or JSON of sample user profiles and sample dataset used for valuation examples.
+
+DEVELOPER RULES & QUALITY STANDARDS
+- Keep changes modular and well-documented.
+- Write clear, atomic commits and add meaningful commit messages.
+- Add code comments where behavior might be surprising.
+- No breaking changes to existing APIs unless necessary — if unavoidable, document migration steps.
+- Use environment variables for secrets; update README with examples and names.
+- Ensure accessibility basics and responsive UI.
+- If you introduce new libraries, add justification in PR and keep dependencies minimal.
+
+QA CHECKLIST (must be completed before marking ready)
+- [ ] All auth flows tested (sign up, verify, login, logout, reset).
+- [ ] Add/Delete model updates terminal stats in real-time (screenshots/video).
+- [ ] Personalized terminal displays according to onboarding profiles (2 examples).
+- [ ] Landing page passes mobile + desktop screenshot review and basic Lighthouse check.
+- [ ] Core modules accessible, RBAC enforced for admin routes.
+- [ ] Tests pass and CI configured.
+- [ ] README and env var list updated.
+- [ ] No secrets in repo.
+
+COMMUNICATION & HANDOFF
+- On PR creation, post a short summary message here with PR link, list of important files changed, and the testing steps you ran.
+- Provide a short "how to rollback" note if something goes wrong on staging.
+
+If anything is unclear about the current code or stack, prefer to open a short RFC in the repo (file: RFC_UPGRADE.md) describing the proposed approach and why, instead of making large breaking changes without review. But do not block on trivial clarifications — make a best-practice implementation for common stacks.
+
+END
