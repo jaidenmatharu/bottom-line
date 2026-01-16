@@ -94,7 +94,6 @@
     "@replit/vite-plugin-dev-banner": "^0.1.1",
     "@replit/vite-plugin-runtime-error-modal": "^0.0.3",
     "@tailwindcss/typography": "^0.5.15",
-    
     "@types/connect-pg-simple": "^7.0.3",
     "@types/express": "4.17.21",
     "@types/express-session": "^1.18.2",
@@ -104,14 +103,9 @@
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "@types/ws": "^8.5.13",
-    
     "autoprefixer": "^10.4.20",
     "drizzle-kit": "^0.31.8",
-    
-    
-    
-    "typescript": "5.6.3",
-    
+    "typescript": "5.6.3"
   },
   "overrides": {
     "drizzle-kit": {
